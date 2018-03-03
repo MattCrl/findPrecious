@@ -1,0 +1,361 @@
+@font-face {
+    font-family:"Tengwar Cursive";
+    src:url("Tengwar/Tengwarc.eot?") format("eot"),
+    url("Tengwar/Tengwarc.woff") format("woff"),
+    url("Tengwar/Tengwarc.ttf") format("truetype"),
+    url("Tengwar/Tengwarc.svg#TengwarCursive") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aniron";
+    src: url('aniron/anicb___.ttf');
+}
+
+@font-face {
+    font-family: "Party";
+    src: url('partybusiness/partybusiness.ttf') format("truetype"),
+    url("partybusiness.eot") format("eot"),
+    url("partybusiness.woff") format("woff"),
+    url("partybusiness.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    background-image: url("images/_bg_light.png")
+}
+
+.navbar {
+    background-color: #ff5d00;
+    margin-bottom: 0;
+    font-family: Aniron;
+}
+
+
+
+.fellow {
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.fellow:hover .img_fellows {
+    opacity: 1;
+}
+
+.fellow:hover .rewards {
+    display: none;
+}
+
+.fellow:hover .fellow_title {
+    bottom: 30vh;
+    font-size: calc(20px + 0.8vw);
+}
+
+.fellow:hover .barre {
+    text-decoration: none;
+}
+
+.fellow:hover .dead {
+    display: none;
+}
+
+.fellow:hover .img_fellows_dead {
+    opacity: 1;
+}
+
+.img_fellows {
+    opacity: 0.6;    
+}
+
+.img_fellows_dead {
+    opacity: 0.3;
+}
+
+/* with transition */
+.fellow_title {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: calc(20px + 2vw);
+    font-family: Party;
+}
+
+.orange_reward {
+    color: #ff8800;
+}
+
+.barre {
+    text-decoration: line-through;
+    text-decoration-color: #ff8800;
+}
+
+.caption {
+    min-height: 150px;
+}
+
+.rewards {
+    position: absolute;
+    width: 60%;
+    font-size: calc(20px + 1vw);
+    bottom: 60%;
+    left: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1vh 0vw 1vh 0vw;
+    border-radius: 20px; 
+    font-family: Party;
+}
+
+.dead {
+    position: absolute;
+    width: 60%;
+    font-size: calc(20px + 1vw);
+    bottom: 60%;
+    left: 20%;
+}
+
+.thumbnail {
+    background-color: black;
+}
+
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ff8800;
+}
+
+
+.white {
+    color: rgb(156, 156, 156);
+    font-family: Party;
+    font-size: calc(12px + 2vw);
+
+}
+
+.orange {
+    color: #ff5d00;
+    font-family: "Tengwar Cursive";
+    font-size: 5vw;
+}
+
+.blackbg {
+    background-color: black;
+    color: white;
+}
+
+
+.nav-justified > li > a {
+    margin-bottom: -7vh;
+    text-align: center;
+}
+
+@media all and (max-width: 763px) {
+    .nav-justified > li > a {
+        margin-bottom: 2vh;
+    }
+}
+
+.contactlink {
+    font-size: calc(10px + 1vw);
+    width: 20%;
+    margin-left: 40vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    transform: skewX(-15deg)
+}
+
+.coin_img {
+    float: right;
+}
+
+.coin_text {
+    margin-left: 5vw;
+    width: 80vw;
+    font-size: calc(15px + 1vw);
+}
+
+.blackbg a {
+    color: #ff5d00;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+    font-family: Aniron;
+    min-width: 165px;
+   
+}
+
+.coin_img {
+    float:right;
+}
+
+p, h2, .nav-pills {
+    font-family: Aniron;
+}
+
+h2 {
+    
+    margin-top: 4vw;
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+
+/* Carousel */
+h3 {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.carousel-caption p {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+.carousel-caption, p {
+    bottom: 40%;
+    font-family: Party;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: none;
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    border-right: 1px solid white;
+}
+
+/* nav pills */
+.nav-pills a {
+    color: grey;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #ff5d00;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* Media objects */
+.hunt_title {
+    font-family: Party;
+    color: #ff5d00;
+    font-size: calc(15px + 2vw);
+}
+
+.hunt_text {
+    font-size: calc(10px + 1vw);
+}
+
+.hunt_link {
+    background-color: black;
+    color: #ff5d00;
+    font-family: Party;
+    font-size: calc(10px + 1vw);
+    padding: 5px 10px 5px 10px;
+}
+
+.media-object {
+    margin-bottom: 10px;
+}
+
+/* About the ring */
+#ring{
+    background-color: black;
+    color: white;
+}
+
+
+.panel-default > .panel-heading {
+    background-color: #ff5d00;
+    color: white;
+    border-color: transparent;
+    font-family: Aniron;
+}
+
+.panel {
+    border: none;
+    background-color: rgb(214, 214, 214);
+}
+
+.golum_img {
+    float: right;
+    position: relative;
+    max-width: 150px;
+}
+
+.media {
+    margin-top: 0px;
+}
+/* Form */
+
+.panel-body {
+    color: black;
+    font-size: calc(20px + 1vw);
+}
+
+th {
+    color: black;
+    font-family: Aniron;
+}
+
+td {
+    color: grey;
+    font-family: Aniron;
+}
+
+
+/* Join army */
+.army {
+    font-size: calc(15px + 0.7vw);
+}
+
+.army_img {
+    float: right;
+    margin-left: 10px;
+}
+
+.army_img2 {
+    float: left;
+    max-width: 260px;
+}
+
+.more_info {
+    font-family: Aniron;
+    color: #ff5d00;
+    font-size: calc(10px + 1vw);
+    min-width: 25%;
+    margin-left: 40vw;
+}
+
+.sauronlink {
+    background-color: black;
+    color: #ff5d00;
+    text-align: center;
+    font-size: calc(10px + 1vw);
+    width: 20%;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    transform: skewX(-15deg);
+}
+/* footer */
+footer {
+    background-color: #ff5d00;
+    padding-bottom: 1vh;
+}
